@@ -37,6 +37,10 @@ public class Dev {
                 .sum();*/
     }
 
+    public int calcularPorcentagemRestante() {
+        int qtdTotal = conteudosInscritos.size() + conteudosConcluidos.size();
+        return (conteudosConcluidos.size() * 100) / qtdTotal;
+    }
 
     public String getNome() {
         return nome;
